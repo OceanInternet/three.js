@@ -301,6 +301,7 @@ var files = {
 		"webaudio_visualizer"
 	],
 	"webvr": [
+		"webvr_video_with_menu",
 		"webvr_cubes",
 		"webvr_daydream",
 		"webvr_gearvr",
