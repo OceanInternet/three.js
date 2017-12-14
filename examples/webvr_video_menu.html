@@ -113,6 +113,12 @@
         mesh.rotation.y = -Math.PI / 2;
         mesh.layers.set(2); // display in right eye only
         scene.add(mesh);
+        
+        	var boxTexture = new THREE.TextureLoader().load( 'textures/crate.gif' );
+				var boxGeometry = new THREE.BoxBufferGeometry( 200, 200, 200 );
+				var boxMaterial = new THREE.MeshBasicMaterial( { map: texture } );
+				boxMesh = new THREE.Mesh( boxGeometry, boxMaterial );
+				scene.add( boxMesh );
 
         //
 
