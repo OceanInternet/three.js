@@ -76,6 +76,14 @@
 			// var skyBox = new THREE.Mesh( geometry, materials );
 			// skyBox.layers.set( 1 );
 			scene.add( mesh );
+			
+			
+			
+			var boxTexture = new THREE.TextureLoader().load( 'textures/crate.gif' );
+				var boxGeometry = new THREE.BoxBufferGeometry( 200, 200, 200 );
+				var boxMaterial = new THREE.MeshBasicMaterial( { map: texture } );
+				boxMesh = new THREE.Mesh( boxGeometry, boxMaterial );
+				scene.add( boxMesh );
 
 
 			// var materialsR = [];
